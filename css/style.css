@@ -1,0 +1,122 @@
+body{
+    background: #1A2E40;
+    margin: 0;
+    padding: 0;
+    font-family: "Myriad Pro";
+}
+
+#login_form{
+    width: 300px;
+    background: #f2f2f2;
+    border: 1px solid white;
+    margin: 250px auto 0;
+    padding: 1em;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+#signup_form{
+    width: 400px;
+    background: #f2f2f2;
+    border: 1px solid white;
+    margin: 50px auto 0;
+    padding: 1em;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+#members{
+    width: 800px;
+    background: #f2f2f2;
+    border: 1px solid white;
+    margin: 100px auto 0;
+    padding: 1em;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+h1,h2,h3,h4,h5{
+    margin-top: 0;
+    font-family: "Myriad Pro", "Arial";
+    text-align: center;
+}
+legend{
+    text-align: center;
+}
+
+input[type=text], input[type=password] {
+    display: block;
+    margin: 0 0 1em 0;
+    width: 280px;
+    border: 5px;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    padding: 1em;
+}
+input[type=submit], form a {
+    border: none;
+    margin: 2em auto;
+    padding: 6px;
+    text-decoration: none ;
+    font-size: 12px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    background: #397d8c;
+    color: white;
+    box-shadow: 0 1px 0 white;
+    -moz-box-shadow: 0 1px 0 white;
+    -webkit-box-shadow: 0 1px 0 white;
+}
+
+input[type=submit]:hover, form a:hover{
+    background: #89d1d9;
+    cursor: pointer;
+}
+.error{
+    color: #393939;
+    font-size: 15px;
+}
+fieldset{
+    width: 300px;
+    margin: auto;
+    margin-bottom: 2em;
+    display: block;
+}
+h1{
+    text-shadow: 0 1px 0 white;
+}
+
+.sub{
+    text-align: center;
+    padding-top: 0;
+    margin-top: 0;
+
+}
+#avatar, #upload {
+    border: 1px solid #ccc; margin: 10px auto;  padding: 10px;
+}
+
+.thumb {
+    float: left; width: 150px; height: 100px; padding: 10px; margin: 10px; background-color: #ddd;
+}
+.thumb:hover {
+    outline: 1px solid #999;
+}
+img {
+    border: 0;
+}
+.calendar{
+    font-family: "Myriad Pro", "Arial";
+    font-size: 12px;
+}
+table.calendar{
+    margin: auto;
+    border-collapse: collapse;
+}
+.calendar .days td{
+    width: 80px;
+    height: 80px;
+    padding: 4px;
+    border: 1px solid #999;
+    vertical-align: top;
+    background-color: #DEF;
+}
