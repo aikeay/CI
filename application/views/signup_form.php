@@ -19,20 +19,10 @@
     echo form_input('username', set_value('username', 'Username'));
     echo form_input('password', set_value('password', 'Password'));
     echo form_input('password2', set_value('password2', 'Password Confirm'));
-    ?>
-</fieldset>
-<fieldset>
-    <legend>Upload your avatar</legend>
 
-    <div id="upload">
-        <?php
-        echo form_open_multipart('gallery');
-        echo form_upload('avatar', 'Avatar');
-        echo form_submit('submit', 'Create Account');
-        echo form_close();
-        ?>
-    </div>
+    echo form_submit('submit', 'Create Account');
 
-    <?php echo validation_errors('<p class="error"></p>') ?>
+    echo validation_errors('<p class="error"></p>') ?>
+
 </fieldset>
 </div>

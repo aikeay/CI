@@ -4,13 +4,15 @@
  * User: alanakeay
  */
 
-class membership_model extends CI_Model{
+class Membership_model extends CI_Model{
 
     function validate()
     {
         $this->db->where('username', $this->input->post('username'));
         $this->db->where('password', md5($this->input->post('password')));
         $query = $this->db->get('membership');
+
+        echo "ERROR!! please enter information to login or sign up" ;
 
         if($query->num_rows() == 1)
         {
@@ -35,4 +37,5 @@ class membership_model extends CI_Model{
     }
 
 }
+
 ?>

@@ -19,13 +19,13 @@ class Login extends CI_Controller{
 
         if($query) // if the user's credentials validated...
         {
-            $data = array(
+            $user = array(
                 'username' => $this->input->post('username'),
                 'is_logged_in' => true
             );
 
-            $this->session->set_userdata($data);
-            redirect('site/members_area');
+            $this->session->set_userdata($user);
+            redirect('site/members_area', $user);
 
         }
         else
@@ -68,6 +68,7 @@ class Login extends CI_Controller{
                 $this->load->view('signup_form');
             }
         }
+        
 
     }
 }
