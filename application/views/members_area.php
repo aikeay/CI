@@ -13,7 +13,21 @@
     <div id="calendar">
     <?php
     $this->load->library('calendar');
-    echo $this->calendar->generate();
+
+    $data = array(
+        3  => 'assignments due week 1',
+        5  => 'debug week 2 work',
+        7 => 'assignments due week 2',
+        10  => 'debug week 3 work',
+        13 => 'assignments due week 3',
+        17  => 'debug week 4 work',
+        19 => 'assignments due week 4',
+        23  => 'doctors appointment',
+        26 => 'final exam due',
+        30 => 'last day of class'
+    );
+
+    echo $this->calendar->generate(2016, 7, $data);
     ?>
     </div>
     <h3>Task Manager</h3>
