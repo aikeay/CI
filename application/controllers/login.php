@@ -68,7 +68,11 @@ class Login extends CI_Controller{
                 $this->load->view('signup_form');
             }
         }
-        
+        function signout()
+        {
+            $data['main_content'] = 'login_form';
+            $this->load->view('includes/template', $data);
+        }            
 
     }
 }

@@ -6,6 +6,9 @@
 ?>
 
 <div id="members">
+    <div id="signout">
+        <p><a href="<?php echo base_url();?>">Signout</a></p>
+    </div>
     <div class="user">
         <p><img id="myImg" src="#" alt="your image" />   Welcome  </p>
     </div>
@@ -44,8 +47,11 @@
     </section>
     <h4>Upload your avatar</h4>
     <input type='file' />
-
-
+    <h4>Share on Facebook</h4>
+    <div id="fb-root"></div>
+    <!-- Your share button code -->
+    <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
 </div>
+
 
 
